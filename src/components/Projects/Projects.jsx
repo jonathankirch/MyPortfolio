@@ -2,8 +2,8 @@ import { NewProject } from './NewProject/NewProject';
 
 export const Projects = () => {
 	return (
-		<section className='container mt-5' id='projetos'>
-			<h1 className='text-center text-light mb-5'>Projetos</h1>
+		<section className='container mt-5 pb-5 mb-5' id='projetos'>
+			<h1 className='text-center text-purple mb-5'>Meus Projetos:</h1>
 			<div>
 				<NewProject
 					nome={'Projeto 1'}

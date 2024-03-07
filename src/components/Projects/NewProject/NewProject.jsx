@@ -8,19 +8,23 @@ export const NewProject = ({
 	isReverse,
 }) => {
 	return (
-		<div className='container-fluid border rounded p-4 text-gray mb-5'>
+		<div className='container-fluid border border-gray rounded p-4 text-gray mb-5 bg-dark-full2 shadow'>
 			<div
 				className={`row ${
 					isReverse ?? 'flex-row-reverse'
 				} row-cols-1 row-cols-md-2`}>
 				<div className='col my-3'>
-					<div className='border w-75 mx-auto'>
-						<img className='w-100' src={img} alt={`Imagem do site ${nome}`} />
+					<div className=' border border-purple rounded w-75 mx-auto shadow'>
+						<img
+							className='w-100 rounded'
+							src={img}
+							alt={`Imagem do site ${nome}`}
+						/>
 					</div>
 				</div>
 				<div className='col position-relative'>
 					<div className='pb-5'>
-						<h1 className='text-light'>{nome}</h1>
+						<h1 className='text-light fw-bold'>{nome}</h1>
 						<p>{descricao}</p>
 					</div>
 					<div
@@ -33,11 +37,11 @@ export const NewProject = ({
 						className={`d-flex mt-5${
 							isReverse ? 'flex-row-reverse end-0' : 'flex-row start-0'
 						} position-absolute bottom-0 p-3`}>
-						<button type='button' className='btn btn-light mx-3'>
+						<button type='button' className='btn btn-light mx-3 bg-success text-light border border-success shadow'>
 							Abrir
 						</button>
-						<button type='button' className='btn btn-light'>
-							Repositório
+						<button type='button' className='btn btn-light bg-dark text-light shadow'>
+						&lt; Repositório /&gt;
 						</button>
 					</div>
 				</div>

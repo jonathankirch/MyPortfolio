@@ -1,15 +1,44 @@
+.bg-dark-full {
+	background-color: rgb(9, 9, 9);
+	transition: all 2s;
+}
+
+.bg-dark-full2 {
+	background-color: rgb(17, 17, 17);
+}
+
 .bg-dark {
-	background-color: rgb(19, 19, 21) !important;
+	background-color: rgb(25, 26, 28) !important;
 }
 
-.bg-dark-gray {
-	background-color: rgb(79, 79, 79) !important;
+.bg-dark-secondary {
+	background-color: rgb(32, 37, 40) !important;
 }
 
-.bg-gray {
-	background-color :rgb(155, 155, 153) !important;
+.bg-dark-transparent {
+	background-color: rgba(32, 37, 40, 0.178) !important;
+}
+
+.border-gray{
+	border-color: rgb(42, 42, 46) !important;
+}
+
+.text-purple {
+	color: rgb(138, 118, 243) !important;
+}
+
+.border-purple {
+	border-color: rgb(138, 118, 243) !important;
+}
+
+.border-purple2 {
+	border-color: rgb(201, 156, 251) !important;
 }
 
 .text-gray {
 	color: rgb(184, 184, 186) !important;
+}
+
+.bg-blue{
+	background-color: rgb(65, 105, 225) !important; 
 }

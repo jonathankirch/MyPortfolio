@@ -5,8 +5,10 @@ import { Contato } from '../Contato/Contato';
 
 export const HomePage = () => {
 	return (
-		<div className='bg-dark p-2'>
-			<Header />
+		<div className='bg-dark'>
+			<div className='pb-5'>
+				<Header />
+			</div>
 			<Sobre />
 			<Projects />
 			<Contato />

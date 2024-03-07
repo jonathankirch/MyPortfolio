@@ -1,7 +1,9 @@
+
 export const ApresentacaoInicial = () => {
 	return (
 		<>
-			<section className='container border border-light rounded mx-auto w-75 my-5 p-4'>
+		<div className="pt-5">
+			<section className='container border border-dark shadow rounded mx-auto w-75 my-5 p-4 bg-dark-secondary'>
 				<div className='row row-cols-1 row-cols-md-2'>
 					<div className='col'>
 						<div className='w-50 mx-auto'>
@@ -27,7 +29,7 @@ export const ApresentacaoInicial = () => {
 					</div>
 				</div>
 			</section>
-			<section className='border border-light rounded w-75 mx-auto my-5 p-4'>
+			<section className='border border-dark shadow rounded w-75 mx-auto my-5 p-4 bg-dark-secondary'>
 				<div className='row row-cols-1 row-cols-md-2'>
 					<div className='col position-relative'>
 						<h1 className='text-light fw-bold' id='sobre-mim'>
@@ -47,6 +49,7 @@ export const ApresentacaoInicial = () => {
 					</div>
 				</div>
 			</section>
+			</div>
 		</>
 	);
 };
