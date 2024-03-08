@@ -20,7 +20,7 @@ export const NewProject = ({
 							src={img}
 							alt={`Imagem do site ${nome}`}
 						/>
-						<div className='w-50 mx-auto'>
+						<div className='w-100 mx-auto'>
 						<ul className='d-flex d-flex justify-content-center flex-wrap list-unstyled'>
 							{tecnologias ?? tecnologias.map((tecnologia) => (
 								<li key={tecnologia}>{tecnologia}</li>
