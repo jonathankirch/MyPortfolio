@@ -13,13 +13,14 @@ export const NewProject = ({
 				className={`row ${
 					isReverse ?? 'flex-row-reverse'
 				} row-cols-1 row-cols-md-2`}>
-				<div className='col my-3'>
-					<div className=' border border-purple rounded w-75 mx-auto shadow'>
+				<div className='col'>
+					<div className='rounded w-75 mx-auto'>
 						<img
-							className='w-100 rounded'
+							className='w-100 rounded border border-purple mb-4 shadow'
 							src={img}
 							alt={`Imagem do site ${nome}`}
 						/>
+						<div className='text-center'>{tecnologias}</div>
 					</div>
 				</div>
 				<div className='col position-relative'>
@@ -28,15 +29,7 @@ export const NewProject = ({
 						<p>{descricao}</p>
 					</div>
 					<div
-						className={`d-flex ${
-							isReverse ? 'flex-row-reverse start-0' : 'flex-row end-0'
-						} position-absolute bottom-0 p-3`}>
-						{tecnologias}
-					</div>
-					<div
-						className={`d-flex mt-5${
-							isReverse ? 'flex-row-reverse end-0' : 'flex-row start-0'
-						} position-absolute bottom-0 p-3`}>
+						className={`d-flex position-absolute bottom-0 flex-row-reverse end-0`}>
 						<button type='button' className='btn btn-light mx-3 bg-success text-light border border-success shadow'>
 							Abrir
 						</button>
