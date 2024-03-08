@@ -3,7 +3,7 @@ import simbolo from './img/simbolo.png';
 export const ApresentacaoInicial = () => {
 	return (
 		<>
-			<div className='pt-5'>
+			<div className='pt-5' id='home'>
 				<section className='container border border-dark shadow rounded w-75 mx-auto my-5 p-4 bg-dark-secondary'>
 					<div className='row row-cols-1 row-cols-md-2'>
 						<div className='col'>
@@ -24,7 +24,7 @@ export const ApresentacaoInicial = () => {
 								sint labore, porro alias error perspiciatis sapiente voluptatem
 								accusantium consectetur sit neque voluptas.
 							</p>
-							<div className='position-absolute bottom-0 end-0 position-relative me-2'>
+							<div className='position-absolute bottom-0 end-0 position-relative me-2 p-2 shadow-sm rounded'>
 								<img style={{ width: 30 }} src={simbolo} alt='</>' />
 							</div>
 						</div>
@@ -47,7 +47,7 @@ export const ApresentacaoInicial = () => {
 							<div className='border w-50 mx-auto'>
 								<img className='w-100' src='https://placehold.co/300' alt='' />
 							</div>
-							<div className='position-absolute bottom-0 end-0 position-relative me-2'>
+							<div className='position-absolute bottom-0 end-0 position-relative me-2 p-2 shadow-sm rounded'>
 								<img style={{ width: 30 }} src={simbolo} alt='</>' />
 							</div>
 						</div>

@@ -16,11 +16,17 @@ export const NewProject = ({
 				<div className='col'>
 					<div className='rounded w-75 mx-auto'>
 						<img
-							className='w-100 rounded border border-purple mb-4 shadow'
+							className='w-100 rounded border border-4 border-purple mb-3 shadow'
 							src={img}
 							alt={`Imagem do site ${nome}`}
 						/>
-						<div className='text-center'>{tecnologias}</div>
+						<div className='w-50 mx-auto'>
+						<ul className='d-flex d-flex justify-content-center flex-wrap list-unstyled'>
+							{tecnologias ?? tecnologias.map((tecnologia) => (
+								<li key={tecnologia}>{tecnologia}</li>
+							))}
+						</ul>
+						</div>
 					</div>
 				</div>
 				<div className='col position-relative'>
@@ -30,10 +36,10 @@ export const NewProject = ({
 					</div>
 					<div
 						className={`d-flex position-absolute bottom-0 flex-row-reverse end-0`}>
-						<button type='button' className='btn btn-light mx-3 bg-success text-light border border-success shadow'>
+						<button type='button' className='btn btn-light mx-3 bg-success text-light border border-success shadow-sm fw-bold'>
 							Abrir
 						</button>
-						<button type='button' className='btn btn-light bg-dark text-light shadow'>
+						<button type='button' className='btn btn-light bg-dark text-light shadow-sm fw-bold'>
 						&lt; Repositório /&gt;
 						</button>
 					</div>

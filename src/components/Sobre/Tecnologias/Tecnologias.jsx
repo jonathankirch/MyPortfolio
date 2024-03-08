@@ -15,7 +15,7 @@ export const Tecnologias = () => {
 
 	return (
 		<section className='container text-center pb-5'>
-			<h1 className='container bg-dark-transparent w-50 rounded text-light mb-4 text-purple shadow p-2'>Tecnologias</h1>
+			<h1 className='container bg-dark-transparent w-50 rounded text-light mb-4 text-purple shadow p-2 fw-bold'>Tecnologias</h1>
 			<div className='row'>
 				<ul className='d-flex d-flex justify-content-center flex-wrap list-unstyled'>
 					{tecnologias &&
@@ -27,7 +27,7 @@ export const Tecnologias = () => {
 						))}
 				</ul>
 			</div>
-			<hr className='text-light border border-purple' />
+			<hr className='text-light border border-purple shadow'/>
 		</section>
 	);
 };

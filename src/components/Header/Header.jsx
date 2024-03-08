@@ -2,15 +2,17 @@ import './Header.module.css';
 
 export const Header = () => {
 	return (
-		<div className='bg-dark-full shadow fixed-top' id='home'>
+		<div className='bg-dark-full shadow fixed-top'>
 			<div className='border-bottom border-purple2'>
 				<nav
 					className='navbar navbar-expand-xxl py-3 container'
 					data-bs-theme='dark'>
 					<div className='container-fluid'>
 						<div className='text-start text-center'>
-							<a href='/' className='text-light text-decoration-none'>
-								<h1 className='text-purple'>&lt; Hello World /&gt;</h1>
+							<a href='#home' className='text-light text-decoration-none'>
+								<h1 className='text-purple fw-bold'>
+									&lt; Hello World /&gt;
+								</h1>
 							</a>
 						</div>
 						<div>
