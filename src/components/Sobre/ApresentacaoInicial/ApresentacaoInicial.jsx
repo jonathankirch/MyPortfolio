@@ -4,7 +4,7 @@ export const ApresentacaoInicial = () => {
 	return (
 		<>
 			<div className='pt-5'>
-				<section className='container border border-dark shadow rounded mx-auto w-75 my-5 p-4 bg-dark-secondary'>
+				<section className='container border border-dark shadow rounded w-75 mx-auto my-5 p-4 bg-dark-secondary'>
 					<div className='row row-cols-1 row-cols-md-2'>
 						<div className='col'>
 							<div className='w-50 mx-auto'>
@@ -30,7 +30,7 @@ export const ApresentacaoInicial = () => {
 						</div>
 					</div>
 				</section>
-				<section className='border border-dark shadow rounded w-75 mx-auto my-5 p-4 bg-dark-secondary'>
+				<section className='container border border-dark shadow rounded w-75 mx-auto my-5 p-4 bg-dark-secondary'>
 					<div className='row row-cols-1 row-cols-md-2'>
 						<div className='col position-relative'>
 							<h1 className='text-light fw-bold' id='sobre-mim'>
@@ -44,7 +44,7 @@ export const ApresentacaoInicial = () => {
 							</p>
 						</div>
 						<div className='col position-relative'>
-							<div className='border w-75 mx-auto'>
+							<div className='border w-50 mx-auto'>
 								<img className='w-100' src='https://placehold.co/300' alt='' />
 							</div>
 							<div className='position-absolute bottom-0 end-0 position-relative me-2'>
