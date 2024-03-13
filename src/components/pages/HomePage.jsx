@@ -7,7 +7,7 @@ export const HomePage = () => {
 	return (
 		<div className='bg-dark'>
 			<div className='pb-5'>
-				<Header />
+					<Header />
 			</div>
 			<Sobre />
 			<Projects />

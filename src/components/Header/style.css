@@ -1,0 +1,11 @@
+.nav-item div {
+	position: relative;
+	transition: 0.5s all;
+	color: rgb(138, 118, 243) !important;
+}
+
+.nav-item div:hover {
+	transition: 0.5s all;
+	border-bottom: 1px solid rgb(138, 118, 243);
+	color: white !important;
+}

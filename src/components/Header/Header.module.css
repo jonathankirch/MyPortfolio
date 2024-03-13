@@ -1,7 +1,0 @@
-.item {
-	transition: 2s !important;
-}
-
-.item:hover {
-	text-decoration: underline !important;
-}
