@@ -5,6 +5,8 @@ export const NewProject = ({
 	descricao,
 	img,
 	tecnologias,
+	linkPreview,
+	linkRepo,
 	isReverse,
 }) => {
 	return (
@@ -32,16 +34,16 @@ export const NewProject = ({
 				<div className='col position-relative'>
 					<div className='pb-5'>
 						<h1 className='text-light fw-bold'>{nome}</h1>
-						<p>{descricao}</p>
+						<p className='fs-5'>{descricao}</p>
 					</div>
 					<div
 						className={`d-flex position-absolute bottom-0 flex-row-reverse end-0`}>
-						<button type='button' className='btn btn-light mx-3 bg-success text-light border border-success shadow-sm fw-bold'>
+						<a href={linkPreview} target='_blank' className='btn btn-light mx-3 bg-success text-light border border-success shadow-sm fw-bold'>
 							Abrir
-						</button>
-						<button type='button' className='btn btn-light bg-dark text-light shadow-sm fw-bold'>
+						</a>
+						<a href={linkRepo} target='_blank' className='btn btn-light bg-dark text-light shadow-sm fw-bold'>
 						&lt; Repositório /&gt;
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -54,5 +56,7 @@ NewProject.propTypes = {
 	descricao: PropTypes.string,
 	img: PropTypes.string,
 	tecnologias: PropTypes.array,
+	linkPreview: PropTypes.string,
+  linkRepo: PropTypes.string,
 	isReverse: PropTypes.bool,
 };
