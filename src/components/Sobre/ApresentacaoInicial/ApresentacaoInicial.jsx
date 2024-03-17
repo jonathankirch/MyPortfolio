@@ -37,7 +37,7 @@ export const ApresentacaoInicial = () => {
 								Sobre mim
 							</h1>
 							<p className='text-gray fs-5'>
-								Gosto de aprender coisas novas, especialmente aquelas que
+								Tenho gosto em aprender coisas novas, especialmente aquelas que
 								aprimoram a qualidade dos meus projetos. Estou constantemente em
 								busca de conhecimento para expandir minhas habilidades e
 								enfrentar desafios com confiança.
