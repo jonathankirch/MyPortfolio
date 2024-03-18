@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const NewProject = ({ nome, descricao, img, tecnologias, linkPreview, linkRepo, isReverse }) => {
+export const NewProject = ({ nome, descricaoP1, descricaoP2, img, tecnologias, linkPreview, linkRepo, isReverse }) => {
 	return (
 		<div className='container-fluid border border-gray rounded p-4 text-gray mb-5 bg-dark-full2 shadow'>
 			<div className={`row ${isReverse ?? 'flex-row-reverse'} row-cols-1 row-cols-md-2`}>
@@ -21,7 +21,8 @@ export const NewProject = ({ nome, descricao, img, tecnologias, linkPreview, lin
 				<div className='col position-relative'>
 					<div className='pb-5'>
 						<h1 className='text-light fw-bold'>{nome}</h1>
-						<p className='fs-5'>{descricao}</p>
+						<p className='fs-5'>{descricaoP1}</p>
+						<p className='fs-5'>{descricaoP2}</p>
 					</div>
 					<div className={`d-flex position-absolute bottom-0 flex-row-reverse end-0`}>
 						<a
@@ -42,7 +43,8 @@ export const NewProject = ({ nome, descricao, img, tecnologias, linkPreview, lin
 
 NewProject.propTypes = {
 	nome: PropTypes.string,
-	descricao: PropTypes.string,
+	descricaoP1: PropTypes.string,
+	descricaoP2: PropTypes.string,
 	img: PropTypes.string,
 	tecnologias: PropTypes.array,
 	linkPreview: PropTypes.string,
