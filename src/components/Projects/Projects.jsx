@@ -10,70 +10,73 @@ import CloneNetflixIMG from './ProjectImages/CloneNetflixIMG.png';
 import ListaDeTarefasIMG from './ProjectImages/ListaDeTarefasIMG.png';
 
 export const Projects = () => {
-	const tecnologiasProjeto1 = [
-		<FaHtml5 title='HTML5' key={'html5'} size={40} color='red' className='rounded shadow-sm bg-dark-transparent mx-2 p-1' />,
-		<RiJavascriptFill
-			title='JavaScript'
-			key={'javascript'}
-			size={40}
-			color='yellow'
-			className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-		/>,
-	];
-	const tecnologiasBookPass = [
-		<FaReact
-			title='React'
-			key={'react'}
-			size={40}
-			color='rgb(94, 211, 244)'
-			className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-		/>,
-		<FaBootstrap
-			title='Bootstrap'
-			key={'bootstrap'}
-			size={40}
-			color='rgb(135, 18, 247)'
-			className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-		/>,
-	];
-	const tecnologiasCloneNetflix = [
-		<FaReact
-      title='React'
-      key={'react'}
-      size={40}
-      color='rgb(94, 211, 244)'
-      className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-    />,
-    <FaCss3
-      title='CSS3'
-      key={'css3'}
-      size={40}
-      color='blue'
-      className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-    />,
-	]
-	const tecnologiasToDoList = [
-		<FaHtml5
-      title='HTML5'
-      key={'html5'}
-      size={40}
-      color='red'
-      className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-    />,
-    <FaCss3
-      title='CSS3'
-      key={'css3'}
-      size={40}
-      color='blue'
-      className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
-    />,
-		<RiJavascriptFill
-      title='JavaScript'
-      key={'javascript'}
-      size={40}
-      color='yellow' 
-		/>
-	]
+	const tecnologias = {
+		Portfolio: [
+			<FaReact
+				title='React'
+				key={'react'}
+				size={40}
+				color='rgb(94, 211, 244)'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+			<FaBootstrap
+				title='Bootstrap'
+				key={'bootstrap'}
+				size={40}
+				color='rgb(135, 18, 247)'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+		],
+		BookPass: [
+			<FaReact
+				title='React'
+				key={'react'}
+				size={40}
+				color='rgb(94, 211, 244)'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+			<FaBootstrap
+				title='Bootstrap'
+				key={'bootstrap'}
+				size={40}
+				color='rgb(135, 18, 247)'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+		],
+		CloneNetflix: [
+			<FaReact
+				title='React'
+				key={'react'}
+				size={40}
+				color='rgb(94, 211, 244)'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+			<FaCss3
+				title='CSS3'
+				key={'css3'}
+				size={40}
+				color='blue'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+		],
+		ToDoList: [
+			<FaHtml5
+				title='HTML5'
+				key={'html5'}
+				size={40}
+				color='red'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+			<FaCss3
+				title='CSS3'
+				key={'css3'}
+				size={40}
+				color='blue'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+			<RiJavascriptFill title='JavaScript' key={'javascript'} size={40} color='yellow' />,
+		],
+	};
 
 	return (
 		<section className='container mt-5 pb-5 mb-5' id='projetos'>
@@ -82,15 +85,15 @@ export const Projects = () => {
 			</div>
 			<div>
 				<NewProject
-					nome={'Portifólio'}
+					nome={'Portfólio'}
 					descricaoP1={
 						'Meu portfólio foi elaborado com o intuito de demonstrar, aos interessados, o meu trabalho. Por meio dele, podem ver tanto o meu histórico de criações quanto o meu conhecimento já adiquirido.'
 					}
 					descricaoP2={'Também disponibilizo formas de entrar em contato para facilitar a interação com os clientes.'}
 					img={'https://placehold.co/400'}
-					tecnologias={tecnologiasProjeto1}
-					linkPreview={'https://github.com/jonathankirch'}
-					linkRepo={'https://github.com/jonathankirch'}
+					tecnologias={tecnologias.Portfolio}
+					linkPreview={'https://jonathankirch.vercel.app'}
+					linkRepo={'https://github.com/jonathankirch/MyPortfolio'}
 				/>
 				<NewProject
 					nome={'BookPass'}
@@ -98,9 +101,11 @@ export const Projects = () => {
 					descricaoP1={
 						'O site utiliza a API do Google Books em sua versão gratuita. Nele, você pode receber recomendações de acordo com suas preferências, explorar os mais populares e pesquisar por títulos, além de adicionar os livros de sua escolha à sua lista de favoritos.'
 					}
-					descricaoP2={'Também é possível obter informações detalhadas sobre eles, incluindo seus valores, e até mesmo comprá-los.'}
+					descricaoP2={
+						'Também é possível obter informações detalhadas sobre eles, incluindo seus valores, e até mesmo comprá-los.'
+					}
 					img={BookPassIMG}
-					tecnologias={tecnologiasBookPass}
+					tecnologias={tecnologias.BookPass}
 					linkPreview={'https://bookpass.vercel.app'}
 					linkRepo={'https://github.com/jonathankirch/BookPass'}
 				/>
@@ -111,7 +116,7 @@ export const Projects = () => {
 					}
 					descricaoP2={'O site é totalmente responsivo, e para estilizar o projeto, utilizei CSS3.'}
 					img={CloneNetflixIMG}
-					tecnologias={tecnologiasCloneNetflix}
+					tecnologias={tecnologias.CloneNetflix}
 					linkPreview={'https://meu-clone-netflix.vercel.app'}
 					linkRepo={'https://github.com/jonathankirch/NetflixClone'}
 				/>
@@ -123,7 +128,7 @@ export const Projects = () => {
 					isReverse
 					descricaoP2={'O site é responsivo e as tarefas permanecem salvas mesmo após a atualização da página.'}
 					img={ListaDeTarefasIMG}
-					tecnologias={tecnologiasToDoList}
+					tecnologias={tecnologias.ToDoList}
 					linkPreview={'https://jonathankirch.github.io/ListaDeTarefas-JS/'}
 					linkRepo={'https://github.com/jonathankirch/ListaDeTarefas-JS'}
 				/>

@@ -16,10 +16,18 @@ export const Contato = () => {
 					<FaArrowUp size={30} color='rgb(138, 118, 243)' />
 				</a>
 			</div>
-			<h1 className='text-center text-purple fw-bold'>Contato</h1>
+			{/* <h1 className='text-center text-purple fw-bold'>Contato</h1> */}
 			<div className='container w-100'>
-				<div className='row'>
-					<div className='col'>
+				<div className='row d-flex flex-row-reverse'>
+					<div className='col pt-4 h-100 my-auto'>
+						<div>
+							<h1 className='fraseContato'>
+								Interessado?
+								<br /> Contate-me agora mesmo!
+							</h1>
+						</div>
+					</div>
+					<div className='col my-auto pt-4'>
 						<div className='d-flex justify-content-center mt-4'>
 							<ul className='list-unstyled text-light'>
 								<li className='mb-3 lista'>
@@ -50,11 +58,6 @@ export const Contato = () => {
 									</a>
 								</li>
 							</ul>
-						</div>
-					</div>
-					<div className='col'>
-						<div className='text-center'>
-							<img className='rounded-circle' src='https://placehold.co/150' alt='Minha Imagem' />
 						</div>
 					</div>
 				</div>

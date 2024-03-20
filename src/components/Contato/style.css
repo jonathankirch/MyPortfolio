@@ -9,3 +9,12 @@
 	border-bottom: 1px solid rgb(138, 118, 243);
 	color: white !important;
 }
+
+.fraseContato {
+	background: linear-gradient(45deg, rgb(138, 118, 243) 10%, rgb(201, 156, 251) 40%, white) 50% !important;
+	background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	font-weight: bold !important;
+	padding-left: 20px;
+	border-left: 10px solid rgb(138, 118, 243) !important;
+}
