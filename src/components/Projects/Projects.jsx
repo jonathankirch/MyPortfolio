@@ -5,6 +5,7 @@ import { FaCss3, FaHtml5, FaReact, FaBootstrap } from 'react-icons/fa';
 import { RiJavascriptFill } from 'react-icons/ri';
 
 // Imagens
+import PortfolioIMG from './ProjectImages/PortfolioIMG.png';
 import BookPassIMG from './ProjectImages/BookPassIMG.png';
 import CloneNetflixIMG from './ProjectImages/CloneNetflixIMG.png';
 import ListaDeTarefasIMG from './ProjectImages/ListaDeTarefasIMG.png';
@@ -90,7 +91,7 @@ export const Projects = () => {
 						'Meu portfólio foi elaborado com o intuito de demonstrar, aos interessados, o meu trabalho. Por meio dele, podem ver tanto o meu histórico de criações quanto o meu conhecimento já adiquirido.'
 					}
 					descricaoP2={'Também disponibilizo formas de entrar em contato para facilitar a interação com os clientes.'}
-					img={'https://placehold.co/400'}
+					img={PortfolioIMG}
 					tecnologias={tecnologias.Portfolio}
 					linkPreview={'https://jonathankirch.vercel.app'}
 					linkRepo={'https://github.com/jonathankirch/MyPortfolio'}
