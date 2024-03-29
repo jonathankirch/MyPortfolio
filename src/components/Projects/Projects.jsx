@@ -3,12 +3,14 @@ import { NewProject } from './NewProject/NewProject';
 // Icones das tecnologias dos projetos
 import { FaCss3, FaHtml5, FaReact, FaBootstrap } from 'react-icons/fa';
 import { RiJavascriptFill } from 'react-icons/ri';
+import { SiTailwindcss } from 'react-icons/si';
 
 // Imagens
 import PortfolioIMG from './ProjectImages/PortfolioIMG.png';
 import BookPassIMG from './ProjectImages/BookPassIMG.png';
 import CloneNetflixIMG from './ProjectImages/CloneNetflixIMG.png';
 import ListaDeTarefasIMG from './ProjectImages/ListaDeTarefasIMG.png';
+import NaturScentIMG from './ProjectImages/NaturScentIMG.png';
 
 export const Projects = () => {
 	const tecnologias = {
@@ -57,6 +59,22 @@ export const Projects = () => {
 				key={'css3'}
 				size={40}
 				color='blue'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+		],
+		NaturScent: [
+			<FaHtml5
+				title='HTML5'
+				key={'html5'}
+				size={40}
+				color='red'
+				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
+			/>,
+			<SiTailwindcss
+				title='Tailwind'
+				key={'tailwind'}
+				size={40}
+				color='rgb(54, 183, 240)'
 				className='rounded shadow-sm bg-dark-transparent mx-2 p-1'
 			/>,
 		],
@@ -121,12 +139,26 @@ export const Projects = () => {
 					linkPreview={'https://meu-clone-netflix.vercel.app'}
 					linkRepo={'https://github.com/jonathankirch/NetflixClone'}
 				/>
+
+				<NewProject
+					nome={'NaturScent'}
+					descricaoP1={
+						'A criação desta landing page teve como objetivo conhecer e praticar o tailwind, utilizando apenas ele e o html foi criado o projeto, o que permite um desempenho mais rápido e efetido para o site.'
+					}
+					isReverse
+					descricaoP2={
+						'O site é totalmente responsivo, com design simples e minimalista, seu objetivo é informar e atrair novos crientes para consumir os produtos ( Marca Fictícia ).'
+					}
+					img={NaturScentIMG}
+					tecnologias={tecnologias.NaturScent}
+					linkPreview={'https://naturscent.vercel.app/'}
+					linkRepo={'https://github.com/jonathankirch/NaturScent/'}
+				/>
 				<NewProject
 					nome={'To-Do List'}
 					descricaoP1={
 						'Este projeto foi desenvolvido para permitir a adição de notas ou tarefas a serem realizadas. Utilizei HTML5, CSS3 e JavaScript, para fazer todo sistema funcionar.'
 					}
-					isReverse
 					descricaoP2={'O site é responsivo e as tarefas permanecem salvas mesmo após a atualização da página.'}
 					img={ListaDeTarefasIMG}
 					tecnologias={tecnologias.ToDoList}

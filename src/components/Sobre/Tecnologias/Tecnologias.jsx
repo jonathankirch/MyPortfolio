@@ -1,8 +1,6 @@
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
+import { FaReact, FaBootstrap, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { RiJavascriptFill } from 'react-icons/ri';
-import { FaReact } from 'react-icons/fa';
-import { FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 export const Tecnologias = () => {
 	const tecnologias = [
@@ -11,8 +9,7 @@ export const Tecnologias = () => {
 		{ name: 'JS', img: <RiJavascriptFill size='50' color='yellow'className='rounded shadow bg-dark-transparent'/> },
 		{ name: 'React', img: <FaReact size='50' color='rgb(94, 211, 244)'className='rounded shadow bg-dark-transparent'/> },
 		{ name: 'Bootstrap', img: <FaBootstrap size='50' color='rgb(135, 18, 247)'className='rounded shadow bg-dark-transparent'/> },
-
-
+		{ name: 'Tailwind', img: <SiTailwindcss size='50' color='rgb(54, 183, 240)'className='rounded shadow bg-dark-transparent'/> },
 	];
 
 	return (
