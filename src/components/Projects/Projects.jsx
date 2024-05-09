@@ -182,7 +182,7 @@ export const Projects = () => {
           }
           img={ListaDeTarefasIMG}
           tecnologias={tecnologias.ToDoList}
-          linkPreview={'https://jonathankirch.github.io/ListaDeTarefas-JS/'}
+          linkPreview={'https://listadetarefas-js.vercel.app/'}
           linkRepo={'https://github.com/jonathankirch/ListaDeTarefas-JS'}
         />
       </div>
