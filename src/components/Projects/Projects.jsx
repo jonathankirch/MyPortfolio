@@ -131,7 +131,7 @@ export const Projects = () => {
           linkPreview={'https://jonathankirch.vercel.app'}
           linkRepo={'https://github.com/jonathankirch/MyPortfolio'}
         />
-				 <NewProject
+				<NewProject
           nome={'Valorant App'}
           descricaoP1={
             'Este site utiliza uma API externa que fornece informações do jogo de FPS Valorant. Neste projeto, manipulo os dados para exibi-los na tela, mostrando diversas informações sobre os mapas, armas, itens e acessórios de jogador.'
@@ -142,7 +142,7 @@ export const Projects = () => {
           }
           img={ValorantAppIMG}
           tecnologias={tecnologias.ValorantApp}
-          linkPreview={'https://valorantapi-app.vercel.app/'}
+          linkPreview={'https://valorant-itens.vercel.app/'}
           linkRepo={'https://github.com/jonathankirch/ValorantApi-App'}
         />
         <NewProject
