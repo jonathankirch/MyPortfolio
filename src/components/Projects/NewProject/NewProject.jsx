@@ -21,8 +21,8 @@ export const NewProject = ({ nome, descricaoP1, descricaoP2, img, tecnologias, l
 				<div className='col position-relative'>
 					<div className='pb-5'>
 						<h1 className='text-light fw-bold'>{nome}</h1>
-						<p className='fs-5'>{descricaoP1}</p>
-						<p className='fs-5'>{descricaoP2}</p>
+						<p>{descricaoP1}</p>
+						<p>{descricaoP2}</p>
 					</div>
 					<div className={`d-flex position-absolute bottom-0 flex-row-reverse end-0`}>
 						<a

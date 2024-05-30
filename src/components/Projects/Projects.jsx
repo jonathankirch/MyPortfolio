@@ -5,6 +5,7 @@ import { FaCss3, FaHtml5, FaReact, FaBootstrap } from 'react-icons/fa'
 import { RiJavascriptFill } from 'react-icons/ri'
 import { SiTailwindcss } from 'react-icons/si'
 import { BiLogoTypescript } from 'react-icons/bi'
+import { TbBrandNextjs } from "react-icons/tb";
 
 // Imagens
 import PortfolioIMG from './ProjectImages/PortfolioIMG.png'
@@ -12,7 +13,6 @@ import BookPassIMG from './ProjectImages/BookPassIMG.png'
 import CloneNetflixIMG from './ProjectImages/CloneNetflixIMG.png'
 import ListaDeTarefasIMG from './ProjectImages/ListaDeTarefasIMG.png'
 import ValorantAppIMG from './ProjectImages/ValorantSite.png'
-import React from 'react'
 
 export const Projects = () => {
   const tecnologias = {
@@ -66,11 +66,11 @@ export const Projects = () => {
       />,
     ],
     ValorantApp: [
-      <FaReact
-        title="React"
-        key={'React'}
+      <TbBrandNextjs  
+        title="NextJs"
+        key={'NextJs'}
         size={40}
-        color="rgb(94, 211, 244)"
+        color='white'
         className="rounded shadow-sm bg-dark-transparent mx-2 p-1"
       />,
       <SiTailwindcss
@@ -132,18 +132,18 @@ export const Projects = () => {
           linkRepo={'https://github.com/jonathankirch/MyPortfolio'}
         />
 				<NewProject
-          nome={'Valorant App'}
+          nome={'Valorant'}
           descricaoP1={
             'Este site utiliza uma API externa que fornece informações do jogo de FPS Valorant. Neste projeto, manipulo os dados para exibi-los na tela, mostrando diversas informações sobre os mapas, armas, itens e acessórios de jogador.'
           }
           isReverse
           descricaoP2={
-            'O projeto foi criado utilizando React, Tailwind e TypeScript, além de ser totalmente responsivo tanto para PC quanto para dispositivos móveis.'
+            'O projeto foi criado utilizando Next JS, o que permite um melhor sistema de SEO que melhora os sistemas de busca do site, além de utilizar Tailwind e TypeScript, e ser totalmente responsivo tanto para PC quanto para dispositivos móveis.'
           }
           img={ValorantAppIMG}
           tecnologias={tecnologias.ValorantApp}
           linkPreview={'https://valorant-itens.vercel.app/'}
-          linkRepo={'https://github.com/jonathankirch/ValorantApi-App'}
+          linkRepo={'https://github.com/jonathankirch/Valorant-Itens-NextJs'}
         />
         <NewProject
           nome={'BookPass'}

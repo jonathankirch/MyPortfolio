@@ -15,7 +15,7 @@ export const ApresentacaoInicial = () => {
 						</div>
 						<div className='col position-relative p-4'>
 							<h1 className='text-light fw-bold'>Eu</h1>
-							<p className='text-gray fs-5'>
+							<p className='text-gray'>
 								Olá, meu nome é Jonathan e sou desenvolvedor web, estudo programação há cerca de dois anos. Iniciei
 								minha jornada durante o primeiro ano do ensino médio e desde então, meu interesse pela tecnologia só
 								cresceu. Descobri na programação que de fato este é o caminho que quero seguir.
@@ -32,12 +32,12 @@ export const ApresentacaoInicial = () => {
 							<h1 className='text-light fw-bold' id='sobre-mim'>
 								Sobre mim
 							</h1>
-							<p className='text-gray fs-5'>
+							<p className='text-gray'>
 								Tenho gosto em aprender coisas novas, especialmente aquelas que aprimoram a qualidade dos meus projetos.
 								Estou constantemente em busca de conhecimento para expandir minhas habilidades e enfrentar desafios com
 								confiança.
 							</p>
-							<p className='text-gray fs-5'>
+							<p className='text-gray'>
 								Abaixo, você encontrará uma lista das tecnologias, frameworks e linguagens que estudei e dominei ao
 								longo desta jornada.
 							</p>
