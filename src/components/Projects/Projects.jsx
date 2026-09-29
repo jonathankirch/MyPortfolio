@@ -128,7 +128,7 @@ export const Projects = () => {
           }
           img={SnackHouseIMG}
           tecnologias={tecnologias.SnackHouse}
-          linkPreview={'https://snackhouse.app.br/'}
+          linkPreview={'https://snack-house2-0.vercel.app/'}
           linkRepo={'https://github.com/jonathankirch/SnackHouse2.0'}
         />
         <NewProject
