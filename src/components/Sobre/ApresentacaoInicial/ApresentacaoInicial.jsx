@@ -16,9 +16,7 @@ export const ApresentacaoInicial = () => {
 						<div className='col position-relative p-4'>
 							<h1 className='text-light fw-bold'>Eu</h1>
 							<p className='text-gray'>
-								Olá, meu nome é Jonathan e sou desenvolvedor web, estudo programação há cerca de dois anos. Iniciei
-								minha jornada durante o primeiro ano do ensino médio e desde então, meu interesse pela tecnologia só
-								cresceu. Descobri na programação que de fato este é o caminho que quero seguir.
+								Olá! Sou o Jonathan, desenvolvedor  com cerca de dois anos de dedicação à programação. Comecei a codar no primeiro ano do ensino médio e me apaixonei por tecnologia. Tenho construído projetos variados, com destaque para o ecossistema web, mas explorando também outras frentes, e tenho certeza de que esta é a carreira que quero trilhar
 							</p>
 							<div className='position-absolute bottom-0 end-0 position-relative m-2 p-2'>
 								<img style={{ width: 30 }} src={simbolo} alt='</>' />
