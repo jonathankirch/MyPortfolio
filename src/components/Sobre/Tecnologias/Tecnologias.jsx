@@ -1,21 +1,23 @@
-import { FaReact, FaBootstrap, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { FaReact, FaBootstrap, FaCss3Alt, FaHtml5, FaJava } from 'react-icons/fa';
 import { RiJavascriptFill } from 'react-icons/ri';
 import { SiTailwindcss } from "react-icons/si";
-import { BiLogoTypescript } from 'react-icons/bi'
+import { BiLogoTypescript, BiLogoPostgresql, BiLogoMongodb } from 'react-icons/bi'
 import { TbBrandNextjs } from "react-icons/tb";
 
 export const Tecnologias = () => {
 	const tecnologias = [
-		{ name: 'HTML5', img: <FaHtml5 size='50' color='red' className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'CSS3', img: <FaCss3Alt size='50' color='blue' className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'JS', img: <RiJavascriptFill size='50' color='yellow'className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'React', img: <FaReact size='50' color='rgb(94, 211, 244)'className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'Bootstrap', img: <FaBootstrap size='50' color='rgb(135, 18, 247)'className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'Tailwind', img: <SiTailwindcss size='50' color='rgb(54, 183, 240)'className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'TypeScript', img: <BiLogoTypescript size='50' color='#2f74c0'className='rounded shadow bg-dark-transparent'/> },
-		{ name: 'Next Js', img: <TbBrandNextjs size='50' color='white'className='rounded shadow bg-dark-transparent'/> },
+		{ name: 'HTML5', img: <FaHtml5 class='icon-custom' color='red'/> },
+		{ name: 'CSS3', img: <FaCss3Alt color='blue' class='icon-custom'/> },
+		{ name: 'JavaScript', img: <RiJavascriptFill color='yellow' class='icon-custom'/> },
+		{ name: 'TypeScript', img: <BiLogoTypescript  color='#2f74c0' class='icon-custom'/> },
+		{ name: 'React', img: <FaReact color='rgb(94, 211, 244)'class='icon-custom'/> },
+		{ name: 'Next Js', img: <TbBrandNextjs  color='white' class='icon-custom'/> },
+		{ name: 'Bootstrap', img: <FaBootstrap color='rgb(135, 18, 247)' class='icon-custom'/> },
+		{ name: 'Tailwind', img: <SiTailwindcss  color='rgb(54, 183, 240)' class='icon-custom'/> },
+		{ name: 'Java', img: <FaJava class='icon-custom' color='white'/> },
+		{ name: 'Postgre SQL', img: <BiLogoPostgresql  color='#31648C' class='icon-custom'/> },
+		{ name: 'MongoDB', img: <BiLogoMongodb class='icon-custom' color='#01E661'/> },
 	];
-
 	return (
 		<section className='container text-center pb-5'>
 			<h1 className='container bg-dark-transparent w-50 rounded text-light mb-4 text-purple shadow p-2 fw-bold'>Tecnologias e Frameworks</h1>
