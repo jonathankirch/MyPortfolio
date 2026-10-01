@@ -31,7 +31,7 @@ export const Contato = () => {
 							<ul className='list-unstyled text-light'>
 								<li className='mb-3 lista'>
 									<a
-										href='https://wa.me/5551996449577/?text=Entrando%20em%20contato%20pelo%20portif%C3%B3lio%3A%20%0A%0A'
+										href='https://wa.me/5551996449577/?text=Entrando%20em%20contato%20pelo%20portf%C3%B3lio%3A%20%0A%0A'
 										target='_blank'
 										className='link-underline link-underline-opacity-0 link-light'>
 										<FaWhatsapp className='me-3' size={25} color='#00B344' />
