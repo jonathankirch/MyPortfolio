@@ -1,6 +1,5 @@
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { FaGithub } from 'react-icons/fa';
 
 import './style.css';
 
@@ -35,8 +34,8 @@ export const Contato = () => {
 										href='https://wa.me/5551996449577/?text=Entrando%20em%20contato%20pelo%20portif%C3%B3lio%3A%20%0A%0A'
 										target='_blank'
 										className='link-underline link-underline-opacity-0 link-light'>
-										<FaWhatsapp className='me-3' size={25} color='rgb(138, 118, 243)' />
-										+55 51 996449577
+										<FaWhatsapp className='me-3' size={25} color='#00B344' />
+										Whatsapp | +55 51 996449577
 									</a>
 								</li>
 								<li className='mb-3 lista'>
@@ -44,8 +43,17 @@ export const Contato = () => {
 										href='mailto:jonathankirch101@gmail.com?subject=Entrando em contato pelo portifólio'
 										target='_blank'
 										className='link-underline link-underline-opacity-0 link-light'>
-										<MdEmail className='me-3' size={25} color='rgb(138, 118, 243)' />
-										jonathankirch101@gmail.com
+										<MdEmail className='me-3' size={25} color='red' />
+										Email | jonathankirch101@gmail.com
+									</a>
+								</li>
+								<li className='mb-3 lista'>
+									<a
+										href='https://www.linkedin.com/in/jonathankirch'
+										target='_blank'
+										className='link-underline link-underline-opacity-0 link-light'>
+										<FaLinkedin className='me-3' size={25} color='#0174B2' />
+										LinkedIn | Jonathan Kirch
 									</a>
 								</li>
 								<li className='mb-3 lista'>
@@ -53,8 +61,8 @@ export const Contato = () => {
 										href='https://github.com/jonathankirch'
 										target='_blank'
 										className='link-underline link-underline-opacity-0 link-light'>
-										<FaGithub className='me-3' size={25} color='rgb(138, 118, 243)' />
-										github.com/jonathankirch
+										<FaGithub className='me-3' size={25} color='white' />
+										GitHub | github.com/jonathankirch
 									</a>
 								</li>
 							</ul>

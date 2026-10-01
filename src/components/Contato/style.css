@@ -4,10 +4,15 @@
 	cursor: pointer;
 }
 
-.lista:hover {
-	transition: 0.5s all;
-	border-bottom: 1px solid rgb(138, 118, 243);
-	color: white !important;
+/* Aplicamos a transição diretamente no link (<a>) para garantir o efeito visual */
+.lista a {
+  transition: 0.3s all;
+}
+
+.lista:hover a {
+  color: white !important;
+  /* Cria o efeito de negrito engrossando as bordas das letras */
+  text-shadow: 0 0 0px white, 0 0 0px white; 
 }
 
 .fraseContato {
