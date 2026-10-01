@@ -28,10 +28,13 @@ export const NewProject = ({ nome, descricaoP1, descricaoP2, img, tecnologias, l
 						<a
 							href={linkPreview}
 							target='_blank'
-							className='btn btn-light mx-3 bg-success text-light border border-success shadow-sm fw-bold'>
+							className='btn btn-success mx-3 shadow-sm fw-bold'>
 							Abrir
 						</a>
-						<a href={linkRepo} target='_blank' className='btn btn-light bg-dark text-light shadow-sm fw-bold'>
+						<a 
+							href={linkRepo} 
+							target='_blank' 
+							className='btn btn-dark shadow-sm fw-bold'>
 							&lt; Repositório /&gt;
 						</a>
 					</div>
